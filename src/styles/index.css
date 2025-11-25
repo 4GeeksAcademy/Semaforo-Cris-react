@@ -50,3 +50,13 @@ body {
 .activo {
   opacity: 1;
 }
+
+.oculto{
+  background-color: gray;
+  overflow: hidden;
+}
+
+.mostrar{
+  overflow: visible;
+  background: purple;
+}

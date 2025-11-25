@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-const PurpleLight = () => {
-
-    const [luzActivada, setLuzActivada] = useState(null)
-
-
+const PurpleLight = ({ color, activo, activoReal, onClick }) => {
+    const activoMostrar = activo ? "mostrar" : "oculto"
+    const activoMostrarReal = activoReal ? "activo" : ""
     return (
-        <button className={luzActivada === 'purple' ? 'luz morada activada' : 'luz morada'}
-            onClick={() => setLuzActivada('purple')}>
-
+        <button
+            className={`luz ${color} ${activoMostrar} ${activoMostrarReal}`}
+            onClick={onClick}
+        >
         </button>
-    )
-}
+    );
+};
 
 export default PurpleLight;
+

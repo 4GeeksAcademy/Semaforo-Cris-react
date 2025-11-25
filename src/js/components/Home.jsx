@@ -1,5 +1,5 @@
 import React from "react";
-import Lights from "./Lights";
+import Semaforo from "./Semaforo";
 
 //include images into your bundle
 
@@ -8,7 +8,7 @@ import Lights from "./Lights";
 const Home = () => {
 	return (
 		<>
-			<Lights />
+			<Semaforo />
 		</>
 
 	);
