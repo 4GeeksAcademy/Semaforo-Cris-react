@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 2.5rem;
-  background-color: darkgray;
+  background-color: black;
 }
 
 .semaforo {
@@ -26,6 +26,8 @@ body {
   background: black;
   border-radius: 10px;
   gap: 10px;
+  border: solid white 2px;
+  box-shadow: 0 0 10px 8px rgba(255, 255, 255, 0.7);
 }
 
 .luz {

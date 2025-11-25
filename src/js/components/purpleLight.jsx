@@ -1,11 +1,11 @@
 import React from "react";
 
-const PurpleLight = ({ color, activo, activoReal, onClick }) => {
+const PurpleLight = ({ activo, activoReal, onClick }) => {
     const activoMostrar = activo ? "mostrar" : "oculto"
     const activoMostrarReal = activoReal ? "activo" : ""
     return (
         <button
-            className={`luz ${color} ${activoMostrar} ${activoMostrarReal}`}
+            className={`luz ${activoMostrar} ${activoMostrarReal}`}
             onClick={onClick}
         >
         </button>

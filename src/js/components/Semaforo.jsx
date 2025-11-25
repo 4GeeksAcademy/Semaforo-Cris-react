@@ -12,36 +12,30 @@ const Semaforo = () => {
         setLuzActiva("morado");
     };
 
-    const activarLuz = (color) => {
-        setLuzActiva(color);
-        setMostrarPurple(false);
-    };
-
     return (
         <div className="semaforo">
 
             <Lights
                 color="rojo"
                 activa={luzActiva === "rojo"}
-                onClick={() => activarLuz("rojo")}
+                onClick={() => setLuzActiva("rojo")}
             />
 
             <Lights
                 color="amarillo"
                 activa={luzActiva === "amarillo"}
-                onClick={() => activarLuz("amarillo")}
+                onClick={() => setLuzActiva("amarillo")}
             />
 
             <Lights
                 color="verde"
                 activa={luzActiva === "verde"}
-                onClick={() => activarLuz("verde")}
+                onClick={() => setLuzActiva("verde")}
             />
 
             <PurpleLight
-                color="morado"
                 activo={mostrarPurple}
-                activoReal={luzActiva === "morado"}
+                activoReal={luzActiva === 'morado'}
                 onClick={activarMorado}
             />
 
